@@ -118,7 +118,7 @@
                     }
                     else
                     {
-                        if (isEven && ((i == n/2 && j == n/2 ) || (i == n / 2 - 1 && j == n / 2) || (i == n / 2 && j == n / 2 - 1 ) || (i == n/2 - 1 && j == n/2 - 1)))
+                        if (isEven && (Math.Abs(n - 1 - 2 * i) < 2 && Math.Abs(n - 1 - 2 * j) < 2))
                         {
                             Console.Write("1   ");
                         }
